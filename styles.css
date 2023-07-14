@@ -4,3 +4,14 @@
     width: 15rem;
     margin: 5vh;
 }
+.container, .row, .col{
+    height: 100vh;
+    flex-wrap: nowrap;
+}
+.container{
+    min-width: 100vw;
+}
+.col{
+    border-color: rgb(91, 126, 126);
+    border-style: dotted;
+}
