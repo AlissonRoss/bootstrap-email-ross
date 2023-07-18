@@ -1,17 +1,25 @@
 .card{
     justify-content: center;
     align-content: center;
-    width: 15rem;
-    margin: 5vh;
+    margin: 1rem;
 }
 .container, .row, .col{
     height: 100vh;
     flex-wrap: nowrap;
 }
-.container{
-    min-width: 100vw;
-}
+
 .col{
     border-color: rgb(91, 126, 126);
     border-style: dotted;
+}
+
+.sidebar{
+    background-color: #1E1E1E;
+    color: white;
+}
+.mail-list{
+    background-color: #3C4955;
+}
+.view-mail{
+    background-color: #9098A0;
 }
