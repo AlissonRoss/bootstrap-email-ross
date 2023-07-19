@@ -15,13 +15,18 @@
     <div class="row h-100">
       <!-- COLUMN 1-->
       <div class="col-2 d-none d-xl-flex sidebar">
-        <ul class="list-group sidebar-text w-100">
-          <li class="list-group-item">STARRED</li>
-          <li class="list-group-item">INBOX</li>
-          <li class="list-group-item">DRAFTS</li>
-          <li class="list-group-item">SENT</li>
-          <li class="list-group-item">JUNK</li>
-        </ul>
+        <div class="list-group list-group-flush sidebar-text w-100"><!--START SIDEBAR ITEMS-->
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">STARRED</li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              INBOX
+              <span class="badge badge-primary badge-pill">3</span>
+            </li>
+            <li class="list-group-item">DRAFTS</li>
+            <li class="list-group-item">SENT</li>
+            <li class="list-group-item">JUNK</li>
+          </ul>
+        </div><!--END SIDEBAR ITEMS-->
       </div>
       <!-- COLUMN 2-->
       <div class="col d-flex-column mail-list ">
@@ -57,7 +62,7 @@
       <!-- COLUMN 3-->
       <div class="col-6 d-none d-sm-flex view-mail">
         <!--Current Mail View-->
-        <div class="card h-50 w-100">
+        <div class="card h-75 w-100">
           <h5 class="card-title">7/5/23</h5>
           <div class="card-body">
             Alisson is now using Bootstrap

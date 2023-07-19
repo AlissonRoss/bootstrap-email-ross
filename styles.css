@@ -13,11 +13,13 @@
     color: white;
 }
 .sidebar-text{
-    margin: 2rem;
+    margin-top: 4.5rem;
+    background-color: #1E1E1E;
 }
-.sidebar-text-item{
-    padding-bottom: 5vh;
+.badge{
+    background-color: #1E1E1E;
 }
+
 .mail-list{
     background-color: #3C4955;
 }
