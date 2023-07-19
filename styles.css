@@ -1,25 +1,30 @@
-.card{
-    justify-content: center;
-    align-content: center;
+.card, .card-title, .card-body, .form-group{
     margin: 1rem;
 }
-.container, .row, .col{
-    height: 100vh;
-    flex-wrap: nowrap;
+.search-bar{
+    margin-top: 1rem;
 }
-
-.col{
-    border-color: rgb(91, 126, 126);
-    border-style: dotted;
+.contains-all-items{
+    height: 100vh;
 }
 
 .sidebar{
     background-color: #1E1E1E;
     color: white;
 }
+.sidebar-text{
+    margin: 2rem;
+}
+.sidebar-text-item{
+    padding-bottom: 5vh;
+}
 .mail-list{
     background-color: #3C4955;
 }
 .view-mail{
     background-color: #9098A0;
+}
+
+.form-control{
+    resize:none;
 }
