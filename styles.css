@@ -22,6 +22,11 @@
 
 .mail-list{
     background-color: #3C4955;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.mail-cards{
+    height: 80%;
 }
 .view-mail{
     background-color: #9098A0;
@@ -29,4 +34,14 @@
 
 .form-control{
     resize:none;
+}
+.compose-button, .close-button, .check-button{
+    margin-left: auto;
+}
+.individual-mail-card:hover, li:hover{
+    cursor: pointer;
+}
+li:hover {
+    background-color: #3C4955;
+    color: white;
 }
