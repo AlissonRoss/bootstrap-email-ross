@@ -1,19 +1,17 @@
 .card, .form-group{
     margin: 1rem;
 }
-.search-bar{
-    margin-top: 1rem;
-}
 .contains-all-items{
     height: 100vh;
 }
-
+.active, .offcanvas{
+    background-color: #543c55 !important;
+}
 .sidebar{
     background-color: #1E1E1E;
     color: white;
 }
 .sidebar-text{
-    margin-top: 4.5rem;
     background-color: #1E1E1E;
 }
 .badge{
@@ -21,15 +19,17 @@
 }
 
 .mail-list{
-    background-color: #3C4955;
+    background-color: #543c55;
     flex-direction: column;
     justify-content: flex-start;
 }
-.mail-cards{
-    height: 80%;
+
+.close-button, .compose-button{
+    position: absolute;
+    bottom: 0;
 }
 .view-mail{
-    background-color: #9098A0;
+    background-color: #a0909d;
 }
 
 .form-control{

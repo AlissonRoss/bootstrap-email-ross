@@ -9,14 +9,55 @@
     integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
   <title>EMAIL PROJECT</title>
 </head>
+<header>
+  <nav class="navbar navbar-static-top navbar-dark bg-dark">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link d-xl-none" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+          aria-controls="offcanvasExample">
+          <img src="./assets/collapseable.svg" height="40px" />
+        </a>
+      </li>
+    </ul>
+    <a class="navbar-brand" href="#">
+      <img src="./assets/sakura.png" height="40px" />
+    </a>
+
+
+    <!-- Search Bar-->
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2 search-bar" type="search" placeholder="Search" aria-label="Search">
+    </form>
+  </nav>
+  <!--OFFCANVAS-->
+  <div class="col-2 d-lg-none sidebar offcanvas offcanvas-start offcanvas-show" tabindex="-1" id="offcanvasExample"
+    aria-labelledby="offcanvasExampleLabel">
+    <div class="list-group list-group-flush sidebar-text offcanvas-body">
+      <ul class="list-group list-group-flush list-group-item-dark ">
+        <li class="list-group-item">STARRED</li>
+        <li class="list-group-item d-flex justify-content-between align-items-center active">
+          INBOX
+          <span class="badge badge-primary badge-pill">3</span>
+        </li>
+        <li class="list-group-item">DRAFTS</li>
+        <li class="list-group-item">SENT</li>
+        <li class="list-group-item">JUNK</li>
+
+      </ul>
+      <button class="btn d-flex close-button " class="btn-close text-reset" data-bs-dismiss="offcanvas">
+        <img src="./assets/arrow.svg" />
+      </button>
+    </div>
+  </div>
+</header>
 
 <body>
   <div class="container-fluid contains-all-items">
-    <div class="row h-100">
+    <div class="row h-100 ">
       <!-- COLUMN 1-->
       <div class="col-2 d-none d-xl-flex sidebar">
         <div class="list-group list-group-flush sidebar-text w-100"><!--START SIDEBAR ITEMS-->
-          <ul class="list-group list-group-flush h-100">
+          <ul class="list-group list-group-flush list-group-item-dark">
             <li class="list-group-item">STARRED</li>
             <li class="list-group-item d-flex justify-content-between align-items-center active">
               INBOX
@@ -25,19 +66,12 @@
             <li class="list-group-item">DRAFTS</li>
             <li class="list-group-item">SENT</li>
             <li class="list-group-item">JUNK</li>
-            
           </ul>
-          <button class="btn d-flex close-button">
-            <img src="./assets/arrow.svg"/>
-          </button>
         </div><!--END SIDEBAR ITEMS-->
       </div>
       <!-- COLUMN 2-->
-      <div class="col d-flex-column mail-list mh-100">
-        <!-- Search Bar-->
-        <form class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-2 search-bar" type="search" placeholder="Search" aria-label="Search">
-        </form>
+      <div class="col d-flex-column mail-list">
+
         <!--MAIL CARDS-->
         <div class="mail-cards">
           <!-- First Mail Item-->
@@ -50,7 +84,7 @@
 
           <!-- Second Mail-->
           <div class="card h-5 individual-mail-card">
-          
+
             <div class="card-body">
               <h5 class="card-title">7/5/23</h5>
               Alisson is now using Bootstrap
@@ -59,7 +93,7 @@
 
           <!-- Third Mail-->
           <div class="card h-5 individual-mail-card">
-            
+
             <div class="card-body">
               <h5 class="card-title">7/5/23</h5>
               Alisson is now using Bootstrap
@@ -67,7 +101,7 @@
           </div>
         </div> <!--END MAIL CARDS-->
         <button type="submit" class="btn d-flex compose-button">
-          <img src="./assets/compose.svg"/>
+          <img src="./assets/compose.svg" />
         </button>
       </div>
       <!-- COLUMN 3-->
@@ -76,7 +110,7 @@
         <div class="card h-75 w-100">
           <h5 class="card-header">INBOX</h5>
           <div class="card-body">
-            
+
             <h6 class="card-subtitle mb-2 text-muted">
               From: Alisson@alisson.me</br>
               To: You</br>
@@ -92,7 +126,7 @@
             <label for="reply">Reply</label>
             <textarea class="form-control" id="reply" rows="5"></textarea>
             <button type="submit" class="btn check-button">
-              <img src="./assets/check.svg"/>
+              <img src="./assets/check.svg" />
             </button>
           </div>
         </div>
