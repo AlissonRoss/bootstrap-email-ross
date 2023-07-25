@@ -1,6 +1,9 @@
 .card, .form-group{
     margin: 1rem;
 }
+body{
+    overflow: hidden;
+}
 .contains-all-items{
     height: 100vh;
 }
