@@ -4,6 +4,9 @@
 body{
     overflow: hidden;
 }
+.navbar{
+    max-height: 7vh;
+}
 .contains-all-items{
     height: 100vh;
 }
